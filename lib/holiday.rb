@@ -66,10 +66,11 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{key.capitalize}:"
       value.each do |k, v|
         new_key = k.to_s.gsub("_", " ").split.map(&:capitalize).join(" ")
-        puts "\t#{new_key} : #{v.join(", ")}"
+        puts "  #{new_key} : #{v.join(", ")}"
       end
-    end
+    end   
 end
+
 
 
 def all_holidays_with_bbq(holiday_hash)
