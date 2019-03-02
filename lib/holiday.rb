@@ -65,9 +65,10 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |key, value|
     puts "#{key.capitalize}:"
       value.each do |k, v|
-        puts "#{k.to_s.gsub("_", " ").split.map(&:capitalize).join(" ")}: #{v.join(", ")}"
-        end
-    end
+        new_key = k.to_s.gsub("_", " ").split.map(&:capitalize).join(" ")
+        puts "\t#{new_key} : #{v.join(", ")}"
+      end
+    end   
 end
 
 
