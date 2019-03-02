@@ -68,7 +68,7 @@ def all_supplies_in_holidays(holiday_hash)
         new_key = k.to_s.gsub("_", " ").split.map(&:capitalize).join(" ")
         puts "  #{new_key} : #{v.join(", ")}"
       end
-    end   
+    end
 end
 
 
